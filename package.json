@@ -15,25 +15,35 @@
   },
   "license": "MIT",
   "files": [
+    "LICENSE",
     "index.js"
   ],
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
   "xo": {
     "rules": {
       "no-cond-assign": 0,
-      "operator-linebreak": 0
+      "operator-linebreak": 0,
+      "unicorn/prefer-string-slice": 0,
+      "unicorn/prevent-abbreviations": 0,
+      "capitalized-comments": 0
     }
   },
   "dependencies": {
-    "color-name": "^1.0.0",
+    "color-name": "^2.0.0",
     "simple-swizzle": "^0.2.2"
   },
   "devDependencies": {
-    "xo": "^0.12.1"
+    "xo": "^0.54.2"
   },
   "keywords": [
     "color",
     "colour",
     "rgb",
     "css"
-  ]
+  ],
+  "exports": {
+    ".": "./index.js"
+  }
 }
